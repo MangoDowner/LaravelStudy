@@ -17,8 +17,7 @@
                     <form action='{{ url("admin/article/$articles->id") }}' method="POST">
                         {{method_field('PUT')}}
                     	{!!csrf_field()!!}
-
-                        <select class="chosen-select form-control mt10" name="select-column-id" id="select-column-id">
+                        <select class="chosen-select" >
                             <option value="">选择分类</option>
                                 <option value="1">1</option>
                                 <option value="1">2</option>

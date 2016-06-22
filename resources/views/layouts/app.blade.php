@@ -12,9 +12,7 @@
     <script src="//cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
     
-    {{--@yield('css')--}}
-    @section('head_css')
-    @show{{-- 其实：这是注释。head区域css样式表 --}}
+    @yield('head_css')
 
 </head>
 <body id="app-layout">
@@ -66,9 +64,8 @@
 
     @yield('content')
 
-    {{--@yield("js-content")--}}
-    @section("js-content")
-    @show {{--js after body--}}
+    @yield("js-content")
+
 
 </body>
 </html>
