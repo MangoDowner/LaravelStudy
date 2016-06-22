@@ -38,4 +38,4 @@
 </div>
 @endsection
 
-    @include('plugins.chosen')
+@include('plugins.chosen')

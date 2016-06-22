@@ -10,6 +10,12 @@
     <link href="//cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="//cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <script src="//cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    
+    {{--@yield('css')--}}
+    @section('head_css')
+    @show{{-- 其实：这是注释。head区域css样式表 --}}
+
 </head>
 <body id="app-layout">
     <nav class="navbar navbar-default navbar-static-top">
@@ -59,6 +65,10 @@
     </nav>
 
     @yield('content')
+
+    {{--@yield("js-content")--}}
+    @section("js-content")
+    @show {{--js after body--}}
 
 </body>
 </html>
